@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/choyxona_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000fff"
+        android:gravity="top|center"
+        android:orientation="vertical"
+        android:text="@string/choyxona_managment"
+        android:textColor="@color/black"
+        android:textSize="20dp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#b0c4de"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/xonalar_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xohlagan xonani tanlang"
+            android:textColor="@color/black"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#1 ">
+
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#2 ">
+
+        </RadioButton>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Iltimos sanani kiriting"
+        android:textColor="@color/black"
+        android:textSize="20dp">
+
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#b0c4de"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ovqatlar_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iltimos ovqatlardan tanlang"
+            android:textColor="@color/black">
+
+        </EditText>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OSH "
+            android:textColor="@color/black">
+
+        </RadioButton>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QOZON KABOB "
+            android:textColor="@color/black">
+
+        </RadioButton>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:text="Hissob">
+
+    </Button>
+
+</LinearLayout>
