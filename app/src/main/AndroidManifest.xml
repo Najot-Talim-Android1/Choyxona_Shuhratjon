@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Choyxona">
-        <activity android:name=".MainActivity">
+        <activity android:name=".BookingListActivity"></activity>
+        <activity android:name=".AddBookingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="10dp">
+    android:padding="10dp"
+    tools:context=".AddBookingActivity">
 
     <TextView
         android:id="@+id/choyxona_text_view"
@@ -14,68 +15,95 @@
         android:background="#000fff"
         android:gravity="top|center"
         android:orientation="vertical"
-        android:text="@string/choyxona_managment"
+        android:text="@string/booking_department"
         android:textColor="@color/black"
         android:textSize="20dp">
 
     </TextView>
 
     <LinearLayout
+        android:id="@+id/room_linear_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#b0c4de"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/xonalar_text_view"
+            android:id="@+id/room_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Xohlagan xonani tanlang"
-            android:textColor="@color/black"
-            android:textSize="20dp">
+            android:text="@string/please_choose_room_number"
+            android:textColor="@color/black">
 
         </TextView>
 
         <RadioButton
+            android:id="@+id/room1_radio_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="#1 ">
+            android:text="1">
 
         </RadioButton>
 
         <RadioButton
+            android:id="@+id/room2_radio_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="#2 ">
+            android:text="2">
 
         </RadioButton>
     </LinearLayout>
 
-    <EditText
+    <LinearLayout
+        android:id="@+id/number_of_people_linear_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Iltimos sanani kiriting"
-        android:textColor="@color/black"
-        android:textSize="20dp">
+        android:layout_height="wrap_content">
 
-    </EditText>
+        <EditText
+            android:id="@+id/number_of_people_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_the_number_of_people"
+            android:textColor="@color/black">
+
+        </EditText>
+
+    </LinearLayout>
+
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/enter_date_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the date "
+            android:textColor="@color/black">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/choose_food_linear_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#b0c4de"
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/ovqatlar_text_view"
+            android:id="@+id/choose_food_edit_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Iltimos ovqatlardan tanlang"
+            android:text="Please choose the food "
             android:textColor="@color/black">
 
         </EditText>
 
         <RadioButton
+            android:id="@+id/food_osh_radio_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="OSH "
@@ -84,6 +112,7 @@
         </RadioButton>
 
         <RadioButton
+            android:id="@+id/food_qozon_kabob_radio_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="QOZON KABOB "
@@ -93,10 +122,20 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/add_booking_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:text="Add Booking">
+
+    </Button>
+
+    <Button
+        android:id="@+id/booking_list_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
-        android:text="Hissob">
+        android:text="Booking List">
 
     </Button>
 

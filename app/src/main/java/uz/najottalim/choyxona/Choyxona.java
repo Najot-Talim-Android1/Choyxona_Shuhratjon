@@ -1,48 +1,93 @@
 package uz.najottalim.choyxona;
 
+import java.util.ArrayList;
+
 public class Choyxona {
-    private int xonaNomeri;
-    private int oshNarxi;
-    private int qozonKabobNarxi;
-    private int mehmonlarSoni;
+    private int room1;
+    private int room2;
+    private String oshPrice;
+    private String qozonKabobPrice;
+    private int numberOfPeople;
+    private String date;
+    private static ArrayList<Choyxona> addBooking = new ArrayList<>();
+    private ArrayList<BookingListActivity> bookingList;
 
-
-       public Choyxona(int xonaNomeri, int oshNarxi, int qozonKabobNarxi, int mehmonlarSoni) {
-        this.xonaNomeri = xonaNomeri;
-        this.oshNarxi = oshNarxi;
-        this.qozonKabobNarxi = qozonKabobNarxi;
-        this.mehmonlarSoni = mehmonlarSoni;
+    public Choyxona(int room1, int room2, String oshPrice, String qozonKabobPrice, int numberOfPeople,String date) {
+        this.room1 = room1;
+        this.room2 = room2;
+        this.oshPrice = oshPrice;
+        this.qozonKabobPrice = qozonKabobPrice;
+        this.numberOfPeople = numberOfPeople;
+        this.date = date;
+        addBooking = new ArrayList<>();
+        bookingList = new ArrayList<>();
     }
 
-        public int getXonaNomeri() {
-        return xonaNomeri;
+    public String getDate() {
+        return date;
     }
 
-    public void setXonaNomeri(int xonaNomeri) {
-        this.xonaNomeri = xonaNomeri;
+    public void setDate(String date) {
+        this.date = date;
     }
 
-    public int getOshNarxi() {
-        return oshNarxi;
+    public static ArrayList<Choyxona> getAddBooking() {
+        return addBooking;
     }
 
-    public void setOshNarxi(int oshNarxi) {
-        this.oshNarxi = oshNarxi;
+    public static void setAddBooking(ArrayList<Choyxona> addBooking) {
+        Choyxona.addBooking = addBooking;
     }
 
-    public int getQozonKabobNarxi() {
-        return qozonKabobNarxi;
+    public int getRoom1() {
+        return room1;
     }
 
-    public void setQozonKabobNarxi(int qozonKabobNarxi) {
-        this.qozonKabobNarxi = qozonKabobNarxi;
+    public void setRoom1(int room1) {
+        this.room1 = room1;
     }
 
-    public int getMehmonlarSoni() {
-        return mehmonlarSoni;
+    public int getRoom2() {
+        return room2;
     }
 
-    public void setMehmonlarSoni(int mehmonlarSoni) {
-        this.mehmonlarSoni = mehmonlarSoni;
+    public void setRoom2(int room2) {
+        this.room2 = room2;
+    }
+
+    public String getOshPrice() {
+        return oshPrice;
+    }
+
+    public void setOshPrice(String oshPrice) {
+        this.oshPrice = oshPrice;
+    }
+
+    public String getQozonKabobPrice() {
+        return qozonKabobPrice;
+    }
+
+    public void setQozonKabobPrice(String qozonKabobPrice) {
+        this.qozonKabobPrice = qozonKabobPrice;
+    }
+
+    public int getNumberOfPeople() {
+        return numberOfPeople;
+    }
+
+    public void setNumberOfPeople(int numberOfPeople) {
+        this.numberOfPeople = numberOfPeople;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
