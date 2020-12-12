@@ -27,7 +27,7 @@ public class AddBookingActivity extends AppCompatActivity {
         RadioButton foodQozonKabobRadio = findViewById(R.id.food_qozon_kabob_radio_button);
 
         Button addBookingButton = findViewById(R.id.add_booking_button);
-        Button BookingListButton = findViewById(R.id.booking_list_button);
+        Button bookingListButton = findViewById(R.id.booking_list_button);
 
         addBookingButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,7 +50,7 @@ public class AddBookingActivity extends AppCompatActivity {
 
             }
         });
-        BookingListButton.setOnClickListener(new View.OnClickListener() {
+        bookingListButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -59,7 +59,6 @@ public class AddBookingActivity extends AppCompatActivity {
 
             }
         });
-
 
     }
 
