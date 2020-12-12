@@ -5,18 +5,18 @@ import java.util.ArrayList;
 public class Choyxona {
     private int room1;
     private int room2;
-    private String oshPrice;
-    private String qozonKabobPrice;
+    private String osh;
+    private String qozonKabob;
     private int numberOfPeople;
     private String date;
     private static ArrayList<Choyxona> addBooking = new ArrayList<>();
     private ArrayList<BookingListActivity> bookingList;
 
-    public Choyxona(int room1, int room2, String oshPrice, String qozonKabobPrice, int numberOfPeople,String date) {
+    public Choyxona(int room1, int room2, String osh, String qozonKabob, int numberOfPeople,String date) {
         this.room1 = room1;
         this.room2 = room2;
-        this.oshPrice = oshPrice;
-        this.qozonKabobPrice = qozonKabobPrice;
+        this.osh = osh;
+        this.qozonKabob = qozonKabob;
         this.numberOfPeople = numberOfPeople;
         this.date = date;
         addBooking = new ArrayList<>();
@@ -55,20 +55,20 @@ public class Choyxona {
         this.room2 = room2;
     }
 
-    public String getOshPrice() {
-        return oshPrice;
+    public String getosh() {
+        return osh;
     }
 
-    public void setOshPrice(String oshPrice) {
-        this.oshPrice = oshPrice;
+    public void setosh(String osh) {
+        this.osh = osh;
     }
 
-    public String getQozonKabobPrice() {
-        return qozonKabobPrice;
+    public String getqozonKabob() {
+        return qozonKabob;
     }
 
-    public void setQozonKabobPrice(String qozonKabobPrice) {
-        this.qozonKabobPrice = qozonKabobPrice;
+    public void setqozonKabob(String qozonKabob) {
+        this.qozonKabob = qozonKabob;
     }
 
     public int getNumberOfPeople() {

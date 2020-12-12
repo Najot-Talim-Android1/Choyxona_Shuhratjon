@@ -37,21 +37,26 @@
 
         </TextView>
 
-        <RadioButton
-            android:id="@+id/room1_radio_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        </RadioButton>
+            <RadioButton
+                android:id="@+id/room1_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1">
 
-        <RadioButton
-            android:id="@+id/room2_radio_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="2">
+            </RadioButton>
 
-        </RadioButton>
+            <RadioButton
+                android:id="@+id/room2_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2">
+
+            </RadioButton>
+        </RadioGroup>
     </LinearLayout>
 
     <LinearLayout
@@ -102,23 +107,28 @@
 
         </EditText>
 
-        <RadioButton
-            android:id="@+id/food_osh_radio_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="OSH "
-            android:textColor="@color/black">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        </RadioButton>
+            <RadioButton
+                android:id="@+id/food_osh_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OSH "
+                android:textColor="@color/black">
 
-        <RadioButton
-            android:id="@+id/food_qozon_kabob_radio_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="QOZON KABOB "
-            android:textColor="@color/black">
+            </RadioButton>
 
-        </RadioButton>
+            <RadioButton
+                android:id="@+id/food_qozon_kabob_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QOZON KABOB "
+                android:textColor="@color/black">
+
+            </RadioButton>
+        </RadioGroup>
     </LinearLayout>
 
     <Button
