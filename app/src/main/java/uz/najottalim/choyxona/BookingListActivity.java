@@ -39,11 +39,11 @@ public class BookingListActivity extends AppCompatActivity {
             params.setMargins(32, 4, 32, 4);
 
 
-            room1RadioBatton.setText(Choyxona.getAddBooking().get(i).getRoom1());
-            room2RadioBatton.setText(Choyxona.getAddBooking().get(i).getRoom2());
+            room1RadioBatton.setText(String.valueOf(Choyxona.getAddBooking().get(i).getRoom1()));
+            room2RadioBatton.setText(String.valueOf(Choyxona.getAddBooking().get(i).getRoom2()));
             oshRadioBatton.setText(Choyxona.getAddBooking().get(i).getosh());
             qozonKabobRadioBatton.setText(Choyxona.getAddBooking().get(i).getqozonKabob());
-            numberOfPeopleText.setText(Choyxona.getAddBooking().get(i).getNumberOfPeople());
+            numberOfPeopleText.setText(String.valueOf(Choyxona.getAddBooking().get(i).getNumberOfPeople()));
             dateText.setText(Choyxona.getAddBooking().get(i).getDate());
 
             itemLayout.addView(room1RadioBatton);
