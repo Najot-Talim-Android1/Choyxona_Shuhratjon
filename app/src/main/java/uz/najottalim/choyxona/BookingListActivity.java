@@ -31,8 +31,8 @@ public class BookingListActivity extends AppCompatActivity {
             TextView dateText = new TextView(getApplicationContext());
 
 
-            room1RadioBatton.setTextSize(40F);
-            room1RadioBatton.setTextColor(Color.BLACK);
+//            room1RadioBatton.setTextSize(40F);
+//            room1RadioBatton.setTextColor(Color.BLACK);
 
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
 
@@ -43,7 +43,7 @@ public class BookingListActivity extends AppCompatActivity {
             room2RadioBatton.setText(String.valueOf(Choyxona.getAddBooking().get(i).getRoom2()));
             oshRadioBatton.setText(Choyxona.getAddBooking().get(i).getosh());
             qozonKabobRadioBatton.setText(Choyxona.getAddBooking().get(i).getqozonKabob());
-            numberOfPeopleText.setText(String.valueOf(Choyxona.getAddBooking().get(i).getNumberOfPeople()));
+            numberOfPeopleText.setText(Choyxona.getAddBooking().get(i).getNumberOfPeople());
             dateText.setText(Choyxona.getAddBooking().get(i).getDate());
 
             itemLayout.addView(room1RadioBatton);

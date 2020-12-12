@@ -7,12 +7,12 @@ public class Choyxona {
     private int room2;
     private String osh;
     private String qozonKabob;
-    private int numberOfPeople;
+    private String numberOfPeople;
     private String date;
     private static ArrayList<Choyxona> addBooking = new ArrayList<>();
     private ArrayList<BookingListActivity> bookingList;
 
-    public Choyxona(int room1, int room2, String osh, String qozonKabob, int numberOfPeople,String date) {
+    public Choyxona(int room1, int room2, String osh, String qozonKabob, String numberOfPeople,String date) {
         this.room1 = room1;
         this.room2 = room2;
         this.osh = osh;
@@ -71,11 +71,11 @@ public class Choyxona {
         this.qozonKabob = qozonKabob;
     }
 
-    public int getNumberOfPeople() {
+    public String getNumberOfPeople() {
         return numberOfPeople;
     }
 
-    public void setNumberOfPeople(int numberOfPeople) {
+    public void setNumberOfPeople(String numberOfPeople) {
         this.numberOfPeople = numberOfPeople;
     }
 }

@@ -41,9 +41,9 @@ public class AddBookingActivity extends AppCompatActivity {
 
                 int parsedRoom1 = Integer.parseInt(room1);
                 int parsedRoom2 = Integer.parseInt(room2);
-                int parsedNumberOfPeople = Integer.parseInt(numberOfPeople);
+//                int parsedNumberOfPeople = Integer.parseInt(numberOfPeople);
 
-                Choyxona addBooking = new Choyxona(parsedRoom1, parsedRoom2, foodOshPrice,foodQozonKabobPrice, parsedNumberOfPeople,enterDate);
+                Choyxona addBooking = new Choyxona(parsedRoom1, parsedRoom2, foodOshPrice,foodQozonKabobPrice, numberOfPeople,enterDate);
 
                 Choyxona.getAddBooking().add(addBooking);
 
