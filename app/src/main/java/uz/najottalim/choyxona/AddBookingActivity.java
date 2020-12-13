@@ -27,7 +27,7 @@ public class AddBookingActivity extends AppCompatActivity {
         RadioButton foodQozonKabobRadio = findViewById(R.id.food_qozon_kabob_radio_button);
 
         Button addBookingButton = findViewById(R.id.add_booking_button);
-        Button bookingListButton = findViewById(R.id.booking_list_button);
+        Button switchBookingListButton = findViewById(R.id.booking_list_button);
 
         addBookingButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,21 +36,36 @@ public class AddBookingActivity extends AppCompatActivity {
                 String room2 = room2Radio.getText().toString();
                 String numberOfPeople = numberOfPeopleEdit.getText().toString();
                 String enterDate = enterDateEdit.getText().toString();
-                String foodOshPrice = foodOshRadio.getText().toString();
+                String foodOsh = foodOshRadio.getText().toString();
                 String foodQozonKabobPrice = foodQozonKabobRadio.getText().toString();
 
                 int parsedRoom1 = Integer.parseInt(room1);
                 int parsedRoom2 = Integer.parseInt(room2);
 //                int parsedNumberOfPeople = Integer.parseInt(numberOfPeople);
 
-                Choyxona addBooking = new Choyxona(parsedRoom1, parsedRoom2, foodOshPrice,foodQozonKabobPrice, numberOfPeople,enterDate);
+                if (room1Radio.isChecked() && foodOshRadio.isChecked()) {
+                    Choyxona addBooking = new Choyxona(foodOsh, numberOfPeople, parsedRoom1, enterDate);
+                    Choyxona.getAddBooking().add(addBooking);
+                }
 
-                Choyxona.getAddBooking().add(addBooking);
+                else if (room2Radio.isChecked() && foodOshRadio.isChecked()) {
+                    Choyxona addBooking = new Choyxona(parsedRoom2, foodOsh, numberOfPeople, enterDate);
+                    Choyxona.getAddBooking().add(addBooking);
+                }
 
+                else if (room2Radio.isChecked() && foodQozonKabobRadio.isChecked()) {
+                    Choyxona addBooking = new Choyxona(foodQozonKabobPrice, parsedRoom2, numberOfPeople, enterDate);
+                    Choyxona.getAddBooking().add(addBooking);
+                }
 
+                else if (room1Radio.isChecked() && foodQozonKabobRadio.isChecked()) {
+                    Choyxona addBooking = new Choyxona(foodQozonKabobPrice, parsedRoom1, numberOfPeople, enterDate);
+                    Choyxona.getAddBooking().add(addBooking);
+                }
             }
         });
-        bookingListButton.setOnClickListener(new View.OnClickListener() {
+
+        switchBookingListButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 

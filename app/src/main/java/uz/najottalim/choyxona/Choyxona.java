@@ -10,18 +10,40 @@ public class Choyxona {
     private String numberOfPeople;
     private String date;
     private static ArrayList<Choyxona> addBooking = new ArrayList<>();
-    private ArrayList<BookingListActivity> bookingList;
+//    private static ArrayList<BookingListActivity> bookingList = new ArrayList<>();
 
-    public Choyxona(int room1, int room2, String osh, String qozonKabob, String numberOfPeople,String date) {
+    public Choyxona(String osh, String numberOfPeople, int room1, String date) {
         this.room1 = room1;
-        this.room2 = room2;
         this.osh = osh;
+        this.numberOfPeople = numberOfPeople;
+        this.date = date;
+
+    }
+
+    public Choyxona(int room2, String osh, String numberOfPeople, String date) {
+        this.room1 = room2;
+        this.osh = osh;
+        this.numberOfPeople = numberOfPeople;
+        this.date = date;
+
+    }
+
+    public Choyxona(String qozonKabob, int room2, String numberOfPeople, String date) {
+        this.room2 = room2;
         this.qozonKabob = qozonKabob;
         this.numberOfPeople = numberOfPeople;
         this.date = date;
-        addBooking = new ArrayList<>();
-        bookingList = new ArrayList<>();
+
     }
+
+    public Choyxona(String qozonKabob, String numberOfPeople, String date, int room1) {
+        this.room1 = room1;
+        this.qozonKabob = qozonKabob;
+        this.numberOfPeople = numberOfPeople;
+        this.date = date;
+
+    }
+
 
     public String getDate() {
         return date;
