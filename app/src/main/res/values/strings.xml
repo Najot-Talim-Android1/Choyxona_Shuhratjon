@@ -4,4 +4,5 @@
     <string name="please_choose_room_number">Please choose room number</string>
     <string name="enter_the_number_of_people">Enter the number of people</string>
     <string name="booking_department">Booking department</string>
+    <string name="booking_list">Booking List</string>
 </resources>

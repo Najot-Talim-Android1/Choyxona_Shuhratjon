@@ -29,6 +29,7 @@ public class BookingListActivity extends AppCompatActivity {
             RadioButton qozonKabobRadioBatton = new RadioButton(getApplicationContext());
             TextView numberOfPeopleText = new TextView(getApplicationContext());
             TextView dateText = new TextView(getApplicationContext());
+       //     TextView roomNumber = new TextView(getApplicationContext());
 
 
 //            room1RadioBatton.setTextSize(40F);
@@ -39,10 +40,10 @@ public class BookingListActivity extends AppCompatActivity {
             params.setMargins(32, 4, 32, 4);
 
 
-            room1RadioBatton.setText(String.valueOf(Choyxona.getAddBooking().get(i).getRoom1()));
-            room2RadioBatton.setText(String.valueOf(Choyxona.getAddBooking().get(i).getRoom2()));
-            oshRadioBatton.setText(Choyxona.getAddBooking().get(i).getosh());
-            qozonKabobRadioBatton.setText(Choyxona.getAddBooking().get(i).getqozonKabob());
+            room1RadioBatton.setText("Room number: " + (Choyxona.getAddBooking().get(i).getRoom1()));
+            room2RadioBatton.setText("Room number: " + (Choyxona.getAddBooking().get(i).getRoom2()));
+            oshRadioBatton.setText("Type of food: " + Choyxona.getAddBooking().get(i).getosh());
+            qozonKabobRadioBatton.setText("Type of food: " + Choyxona.getAddBooking().get(i).getqozonKabob());
             numberOfPeopleText.setText(Choyxona.getAddBooking().get(i).getNumberOfPeople());
             dateText.setText(Choyxona.getAddBooking().get(i).getDate());
 
